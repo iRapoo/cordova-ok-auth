@@ -62,7 +62,7 @@
             </feature>
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <!-- <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
                 android:name="ru.ok.android.sdk.OkAuthActivity"
                 android:launchMode="singleTop"
@@ -84,7 +84,7 @@
             </activity>
             <activity android:name="ru.ok.android.sdk.OkAppInviteActivity">
             </activity>
-        </config-file>
+        </config-file> -->
 
         <framework src="src/android/odnoklassniki-android-sdk" custom="true" />
         <source-file src="src/android/SocialOk.java" target-dir="src/ru/trilan/socialok/" />
