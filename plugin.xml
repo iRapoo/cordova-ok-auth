@@ -55,21 +55,16 @@
 
     <!-- android -->
     <platform name="android">
-        <!-- Cordova 2.5+ -->
+
         <config-file target="config.xml" parent="/*">
             <feature name="SocialOk">
                 <param name="android-package" value="ru.trilan.socialok.SocialOk"/>
             </feature>
         </config-file>
-        <framework src="src/android/odnoklassniki-android-sdk" custom="true" />
-        <source-file src="src/android/SocialOk.java" target-dir="src/ru/trilan/socialok/" />
-        <source-file src="src/android/JsonHelper.java" target-dir="src/ru/trilan/socialok/" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
           <activity
-              android:name="ru.ok.android.sdk.OkAuthActivity"
-              android:launchMode="singleTop"
-              android:configChanges="orientation">
+              android:name="ru.ok.android.sdk.OkAuthActivity">
             <intent-filter>
               <action android:name="android.intent.action.VIEW" />
 
@@ -88,6 +83,14 @@
           <activity android:name="ru.ok.android.sdk.OkAppInviteActivity">
           </activity>
         </config-file>
+
+        <config-file target="res/values/strings.xml" parent="/*">
+            <integer name="appid">$OK_APP_ID</integer>
+        </config-file>
+
+        <framework src="src/android/odnoklassniki-android-sdk" custom="true" />
+        <source-file src="src/android/SocialOk.java" target-dir="src/ru/trilan/socialok/" />
+        <source-file src="src/android/JsonHelper.java" target-dir="src/ru/trilan/socialok/" />
     </platform>
 
 </plugin>

@@ -15,7 +15,7 @@
     },
 
     onDeviceReady: function() {
-        SocialOk.init('1234567', [secret], [key]); //APP ID только цифры
+        SocialOk.init('app_id', 'secret', 'key'); //APP ID только цифры
         SocialOk.login(['offline'], function (value) {
             console.log(value); //value - вернет JSON с token и user (информация аккаунта)
         });
