@@ -46,6 +46,7 @@ apply plugin: 'android-library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation 'com.android.support:support-annotations:27.0.1'
 }
 
 android {
@@ -54,8 +55,8 @@ android {
     publishNonDefault true
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_6
-        targetCompatibility JavaVersion.VERSION_1_6
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 
     sourceSets {
@@ -73,6 +74,6 @@ android {
 
 }
 
-if (file('build-extras.gradle').exists()) {
+/*if (file('build-extras.gradle').exists()) {
     apply from: 'build-extras.gradle'
-}
+}*/

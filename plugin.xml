@@ -82,8 +82,8 @@
         </config-file>
 
         <framework src="src/android/odnoklassniki-android-sdk" custom="true" />
-        <!-- <source-file src="src/android/SocialOk.java" target-dir="src/ru/trilan/socialok/" />
-        <source-file src="src/android/JsonHelper.java" target-dir="src/ru/trilan/socialok/" /> -->
+        <source-file src="src/android/SocialOk.java" target-dir="src/ru/trilan/socialok/" />
+        <source-file src="src/android/JsonHelper.java" target-dir="src/ru/trilan/socialok/" />
     </platform>
 
 </plugin>
