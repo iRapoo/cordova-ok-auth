@@ -62,33 +62,28 @@
             </feature>
         </config-file>
 
-        <!-- <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
-                android:name="ru.ok.android.sdk.OkAuthActivity"
-                android:launchMode="singleTop"
-                android:configChanges="orientation">
+                android:name="ru.ok.android.sdk.OkAuthActivity">
                 <intent-filter>
-                    <action android:name="android.intent.action.VIEW" />
+                    <action android:name="android.intent.action.VIEW"/>
 
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <category android:name="android.intent.category.BROWSABLE" />
+                    <category android:name="android.intent.category.DEFAULT"/>
+                    <category android:name="android.intent.category.BROWSABLE"/>
 
                     <data
                         android:host="ok$OK_APP_ID"
-                        android:scheme="okauth" />
+                        android:scheme="okauth"/>
                 </intent-filter>
             </activity>
-            <activity android:name="ru.ok.android.sdk.OkPostingActivity">
-            </activity>
-            <activity android:name="ru.ok.android.sdk.OkAppSuggestActivity">
-            </activity>
-            <activity android:name="ru.ok.android.sdk.OkAppInviteActivity">
-            </activity>
-        </config-file> -->
+            <activity android:name="ru.ok.android.sdk.OkPostingActivity"/>
+            <activity android:name="ru.ok.android.sdk.OkAppInviteActivity"/>
+            <activity android:name="ru.ok.android.sdk.OkAppSuggestActivity"/>
+        </config-file>
 
         <framework src="src/android/odnoklassniki-android-sdk" custom="true" />
-        <source-file src="src/android/SocialOk.java" target-dir="src/ru/trilan/socialok/" />
-        <source-file src="src/android/JsonHelper.java" target-dir="src/ru/trilan/socialok/" />
+        <!-- <source-file src="src/android/SocialOk.java" target-dir="src/ru/trilan/socialok/" />
+        <source-file src="src/android/JsonHelper.java" target-dir="src/ru/trilan/socialok/" /> -->
     </platform>
 
 </plugin>
