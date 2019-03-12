@@ -71,7 +71,6 @@ android {
         }
     }
 
-    useLibrary 'org.apache.http.legacy'
 }
 
 if (file('build-extras.gradle').exists()) {
