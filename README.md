@@ -16,9 +16,28 @@
 
     onDeviceReady: function() {
         SocialOk.init('app_id', 'secret', 'key'); //APP ID только цифры
-        SocialOk.login(['offline'], function (value) {
+        SocialOk.login(['VALUABLE_ACCESS'], function (value) {
             console.log(value); //value - вернет JSON с token и user (информация аккаунта)
         });
     },
 
     app.initialize();
+
+**Временное неудобство**
+
+Может возникнуть ошибка:
+
+    * What went wrong:
+    Execution failed for task ':app:transformResourcesWithMergeJavaResForDebug'.
+    > More than one file was found with OS independent path 'META-INF/DEPENDENCIES'
+
+
+Для решения данной проблеммы необходимо добавить в platform/android/app/build.gradle
+
+    android {
+        packagingOptions {
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/DEPENDENCIES'
+        }
+    }
