@@ -63,14 +63,27 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.vk.sdk.VKOpenAuthActivity" >
-            </activity>
-            <activity android:name="com.vk.sdk.VKServiceActivity" >
-            </activity>
-        </config-file>
+            <activity
+                android:name="ru.ok.android.sdk.OkAuthActivity"
+                android:launchMode="singleTop"
+                android:configChanges="orientation">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
 
-        <config-file target="res/values/strings.xml" parent="/*">
-            <integer name="appid">$OK_APP_ID</integer>
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+
+                    <data
+                        android:host="ok$OK_APP_ID"
+                        android:scheme="okauth" />
+                </intent-filter>
+            </activity>
+            <activity android:name="ru.ok.android.sdk.OkPostingActivity">
+            </activity>
+            <activity android:name="ru.ok.android.sdk.OkAppSuggestActivity">
+            </activity>
+            <activity android:name="ru.ok.android.sdk.OkAppInviteActivity">
+            </activity>
         </config-file>
 
         <framework src="src/android/odnoklassniki-android-sdk" custom="true" />
