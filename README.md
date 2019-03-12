@@ -32,7 +32,7 @@
     > More than one file was found with OS independent path 'META-INF/DEPENDENCIES'
 
 
-Для решения данной проблеммы необходимо добавить в platform/android/app/build.gradle
+Для решения данной проблемы необходимо добавить в platform/android/app/build.gradle
 
     android {
         packagingOptions {
