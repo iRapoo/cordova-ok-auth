@@ -1,0 +1,16 @@
+dependencies {
+    compile 'com.google.android.gms:play-services-ads:+'
+    compile 'com.android.support:support-annotations:23+'
+}
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}

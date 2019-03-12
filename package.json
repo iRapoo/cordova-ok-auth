@@ -1,0 +1,26 @@
+{
+    "name": "cordova-ok-auth",
+    "version": "1.1.7",
+    "description": "Cordova Plugin for Russian social network Odnoklassniki (http://ok.com)",
+    "cordova": {
+        "id": "cordova-ok-auth",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iRapoo/cordova-ok-auth"
+    },
+    "keywords": [
+        "cordova",
+        "ok",
+        "odnoklassniki",
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios"
+    ],
+    "author": "Rapoo",
+    "license": "MIT License"
+}
